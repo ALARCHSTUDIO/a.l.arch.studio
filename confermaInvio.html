@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a.l.arch.studio | Grazie per il tuo messaggio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #0c0c0c;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .success-container {
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .success-icon {
+            width: 120px;
+            height: 120px;
+            background: rgba(200, 164, 93, 0.1);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            animation: pulse 2s infinite;
+        }
+
+        .success-icon i {
+            color: #c8a45d;
+            font-size: 48px;
+        }
+
+        h1 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #c8a45d;
+            color: #0c0c0c;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #b6914d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .decor-circle {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(200, 164, 93, 0.1);
+            z-index: 1;
+        }
+
+        .circle-1 {
+            width: 400px;
+            height: 400px;
+            top: -200px;
+            left: -200px;
+        }
+
+        .circle-2 {
+            width: 600px;
+            height: 600px;
+            bottom: -300px;
+            right: -300px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(200, 164, 93, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 20px rgba(200, 164, 93, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(200, 164, 93, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="decor-circle circle-1"></div>
+    <div class="decor-circle circle-2"></div>
+    
+    <div class="success-container">
+        <div class="success-icon">
+            <i class="fas fa-check"></i>
+        </div>
+        <h1>Grazie per il tuo messaggio!</h1>
+        <p>Ti risponderemo il prima possibile.<br>Nel frattempo, puoi tornare alla home page.</p>
+        <a href="index.html" class="back-btn">Torna alla Home</a>
+    </div>
+</body>
+</html>
